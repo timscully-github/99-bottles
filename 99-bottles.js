@@ -1,8 +1,15 @@
 var n = 100;
+var plural;
+
 function beer() {
-  while(n >= 2){
-    n--
-    console.log(n + " bottles of beer on the wall, " + n + " bottles of beer. Take 1 down, pass it around, " + (n - 1) + " bottles of beer on the wall");
+  while(n >= 1){
+    n--;
+    if (n === 1) {
+      plural = "";
+    } else {
+      plural = "s"
+    }
+    console.log(n + " bottle" + plural + " of beer on the wall, " + n + " bottle" + plural + " of beer. Take 1 down, pass it around, " + (n - 1) + " bottle" + plural + " of beer on the wall");
   }
 }
 
