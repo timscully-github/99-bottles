@@ -9,6 +9,9 @@ function beer() {
     } else {
       plural = "s"
     }
+    if (n === 0) {
+      n = "no"
+    }
     console.log(n + " bottle" + plural + " of beer on the wall, " + n + " bottle" + plural + " of beer. Take 1 down, pass it around, " + (n - 1) + " bottle" + plural + " of beer on the wall");
   }
 }
